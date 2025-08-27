@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="script.js" defer></script>
+    <meta name="google-site-verification" content="c9APbVFzIe678_FCLkpiCYqbsMGxE-ybPrOu5jV4BEI" />
+    <title>Loading...</title>
+    <link rel="icon" href="images/favicon.ico">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: sans-serif;
+            background-color: rgb(24, 24, 24); /* Optional background color */
+        }
+        a {
+            text-decoration: none; /* Remove underline from link */
+        }
+        .container {
+            display: flex;
+            flex-direction: column; /* Stack items vertically */
+            align-items: center; /* Center items horizontally */
+            justify-content: center; /* Center items vertically */
+            text-align: center;
+            height: 100%; /* Ensure the container takes full height */
+        }
+
+        .loading-text {
+            color: #000000;
+            font-size: 24px;
+            margin-bottom: 20px; /* Add space between the text and the loader */
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            background-color: #005da8;
+            border-radius: 16px;
+            height: 40px;
+            width: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            align-content: center ;
+        }
+
+        .netflix-loader {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .netflix-bar {
+            width: 18px;
+            height: 24px;
+            background-color: #005da8;
+            margin: 0 3px;
+            transform: scaleY(1);
+            animation: netflix-pulse 1.2s ease-in-out infinite;
+            border-radius: 6px;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            font-weight: bolder;
+            font-size: auto 14px;
+            color: rgb(0, 0, 0);
+        }
+
+        /* Apply animation delays to create a wave effect */
+        .netflix-bar:nth-child(1) { animation-delay: 0s; }
+        .netflix-bar:nth-child(2) { animation-delay: 0.07s; }
+        .netflix-bar:nth-child(3) { animation-delay: 0.14s; }
+        .netflix-bar:nth-child(4) { animation-delay: 0.21s; }
+        .netflix-bar:nth-child(5) { animation-delay: 0.28s; }
+        .netflix-bar:nth-child(6) { animation-delay: 0.35s; }
+        .netflix-bar:nth-child(7) { animation-delay: 0.42s; }
+        .netflix-bar:nth-child(8) { animation-delay: 0.49s; }
+        .netflix-bar:nth-child(9) { animation-delay: 0.56s; }
+        .netflix-bar:nth-child(10) { animation-delay: 0.63s; }
+        .netflix-bar:nth-child(11) { animation-delay: 0.70s; }
+        .netflix-bar:nth-child(12) { animation-delay: 0.77s; }
+        .netflix-bar:nth-child(13) { animation-delay: 0.84s; }
+        .netflix-bar:nth-child(14) { animation-delay: 0.91s; }
+        .netflix-bar:nth-child(15) { animation-delay: 0.98s; }
+        .netflix-bar:nth-child(16) { animation-delay: 1.05s; }
+
+        @keyframes netflix-pulse {
+            0%, 40%, 70%, 100% {
+                transform: scaleY(1);
+            }
+            20% {
+                transform: scaleY(2.5);
+            }
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="8l2HdPsGbF49Pj7wf2ouVXvnHHeajbYf-o4Yt-iCb5Y" />
+</head>
+<body>
+    <div class="container">
+        <a href="index.html"><h2 class="loading-text">Loading...</h2> </a>
+        <div class="netflix-loader">
+            <div class="netflix-bar">|</div>
+            <div class="netflix-bar">|</div>
+            <div class="netflix-bar">|</div>
+            <div class="netflix-bar">|</div>
+            <div class="netflix-bar">|</div>
+            <div class="netflix-bar">|</div>
+            <div class="netflix-bar">|</div>
+            <div class="netflix-bar">|</div>
+            <div class="netflix-bar">|</div>
+            <div class="netflix-bar">|</div>
+            <div class="netflix-bar">|</div>
+            <div class="netflix-bar">|</div>
+            <div class="netflix-bar">|</div>
+            <div class="netflix-bar">|</div>
+            <div class="netflix-bar">|</div>
+            <div class="netflix-bar">|</div>
+        </div>
+    </div>
+    <script>
+        let redSign = true;
+        if (redSign) {
+            setTimeout (function() {
+                window.location.href = "NETLIFYDIR.html";
+                redSign = false;
+            }, 2100);
+        }
+    </script>
+
+</body>
+</html>
